@@ -1,0 +1,314 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+  }
+div{
+    border:2px solid black;
+}
+
+
+  
+  .nav {
+    height: 60px;
+    width: 100%;
+    background-color: #4d4d4d;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+
+  .box1{
+      border: 1px solid black;
+      /* height: 30px; */
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin-top: 3px;
+    color: rgb(239, 239, 239);
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+
+
+input:focus{
+    outline: none;
+}
+.contain{
+    padding: 10px;
+}
+.header{
+    display: flex;
+    height: auto;
+    padding: 0 5rem;
+    margin-top: 5rem;
+}
+.header h1{
+    font-size: 5rem;
+    margin: 4rem 0;
+}
+.header p{
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+/* student */
+.student{
+  flex-basis: 50%;
+}
+.student input{
+    width: 100%;
+    border: none;
+    font-size: 2rem;
+}
+.student p{
+  margin: 6rem 0;
+}
+.playstore{
+    width: 70%;
+    border-radius: 50px;
+    height: 4rem;
+    text-align: center;
+    padding: 0.3rem;
+    font-size: 2.5rem;
+}
+.wow{
+    display: flex;
+    height: 4rem;
+    margin: 4rem 0;
+}
+.wow i{
+    padding: 7px 5px;
+    font-size: 2rem
+}
+.press{
+    width: 80%;
+}
+
+/* image */
+.twinnee{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+.twin{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.display{
+    width: 40rem;
+    height: 30rem;
+    margin: 0 auto;
+}
+.image{
+    margin: 0 auto;
+    flex-basis: 50%;
+}
+
+.img{
+    width: 5rem;
+    height: 5rem;
+    margin-top: 15px;
+}
+.img i{
+    font-size: 4rem;
+    padding-top: 1rem;
+}
+
+@media screen and (max-width: 1040px) {
+    .header h1 {
+      font-size: 4rem;
+    }
+    
+    .press{
+        width: 95%;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+      .playstore {
+        font-size: 2rem;
+        padding-top: 7px;
+        width: 90%;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .display{
+        width: 30rem;
+    }
+    
+}
+
+@media screen and (max-width: 740px) {
+    .nav > .nav-links > a {
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+  .header{
+    display: block;
+  }
+  
+}
+@media screen and (max-width: 400px) {
+  .twinnee{
+    display: block;
+  }
+  .display{
+    width: 100%;
+  }
+  
+}
+@media screen and (max-width: 500px) {
+  .header{
+    padding: 0;
+  }
+  .press {
+    width: 100%;
+    text-align: center;
+  }
+  .playstore{
+    width: fit-content;
+    padding: 5px;
+    margin: auto;
+  }
+  
+}
+
+/* next */
+.next{
+  margin-top: 3rem;
+}
+.group{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.box{
+  width: 25rem;
+  height: 24rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+.box h2{
+  font-size: 3rem;
+}
+.box p{
+  font-size: 3rem;
+    padding-top: 20px;
+}
+.book{
+  width: 70%;
+    font-size: 2rem;
+    margin: 20px auto;
+    border-radius: 50px;
+    padding: 5px;
+}
+.two{
+  margin-top: 53px;
+}
+
+
+
+
+/* materials */
+
+.boards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35rem;
+}
+.pics{
+  height: 5rem;
+  width: 5rem;
+}
+.padesh{
+  padding-left: 1.5rem;
+    font-size: 1.5rem;
+}
+.luck{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

@@ -194,66 +194,7 @@ input:focus{
     padding-top: 1rem;
 }
 
-@media screen and (max-width: 1040px) {
-    .header h1 {
-      font-size: 4rem;
-    }
-    
-    .press{
-        width: 95%;
-    }
-  }
 
-  @media screen and (max-width: 1100px) {
-      .playstore {
-        font-size: 2rem;
-        padding-top: 7px;
-        width: 90%;
-    }
-  }
-  @media screen and (max-width: 900px) {
-    .display{
-        width: 30rem;
-    }
-    
-}
-
-@media screen and (max-width: 740px) {
-    .nav > .nav-links > a {
-        padding: 10px 10px;
-    }
-}
-
-@media screen and (max-width: 900px) {
-  .header{
-    display: block;
-  }
-  
-}
-@media screen and (max-width: 400px) {
-  .twinnee{
-    display: block;
-  }
-  .display{
-    width: 100%;
-  }
-  
-}
-@media screen and (max-width: 500px) {
-  .header{
-    padding: 0;
-  }
-  .press {
-    width: 100%;
-    text-align: center;
-  }
-  .playstore{
-    width: fit-content;
-    padding: 5px;
-    margin: auto;
-  }
-  
-}
 
 /* next */
 .next{
@@ -298,6 +239,7 @@ input:focus{
   align-items: center;
   justify-content: center;
   width: 35rem;
+  margin-top: 2rem;
 }
 .pics{
   height: 5rem;
@@ -312,3 +254,159 @@ input:focus{
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.neet{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.jee{
+  padding: 3rem 0;
+  margin: 3rem 0;
+  font-size: 3rem;
+  width: 35rem;
+  text-align: center;
+}
+
+/* subjects */
+.subjects .boards{
+  font-size: 3rem;
+  padding: 3rem 0;
+}
+
+
+.solution .boards{
+  padding: 2rem 0;
+  font-size: 3rem;
+}
+
+
+
+
+
+/* testimonial */
+.onee{
+  width: 15rem;
+  height: 15rem;
+  
+}
+.test{
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.text{
+  margin-top: 2rem;
+}
+
+.download{
+  width: fit-content;
+  padding: 1rem 5rem;
+  font-size: 2rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  text-align: center;
+}
+span{
+  padding-left: 2rem;
+}
+
+h1{
+  font-size: 3rem;
+  padding-left: 2rem;
+  margin: 3rem 0 1.5rem 0 ;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+  .boards{
+    width: 25rem;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .header h1 {
+    font-size: 4rem;
+  }
+  
+  .press{
+      width: 95%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+    .playstore {
+      font-size: 2rem;
+      padding-top: 7px;
+      width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .display{
+      width: 30rem;
+  }
+  
+}
+
+@media screen and (max-width: 740px) {
+  .nav > .nav-links > a {
+      padding: 10px 10px;
+  }
+  .jee{
+    font-size: 2rem;
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+.header{
+  display: block;
+}
+.image{
+  margin-top: 4rem;
+}
+
+}
+@media screen and (max-width: 400px) {
+.twinnee{
+  display: block;
+}
+.display{
+  width: 100%;
+}
+
+}
+@media screen and (max-width: 500px) {
+.header{
+  padding: 0;
+}
+.press {
+  width: 100%;
+  text-align: center;
+}
+.playstore{
+  width: fit-content;
+  padding: 5px;
+  margin: auto;
+}
+}
+
+@media screen and (max-width: 550px) {
+  h1{
+    text-align: center;
+  }
+  
+  }
+  @media screen and (max-width: 250px) {
+    body{
+      text-align: center;
+    }
+    .box,.playstore{
+      height: auto;
+    }
+    .download{
+      width: 100%;
+    }
+    
+    }

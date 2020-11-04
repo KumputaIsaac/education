@@ -14,11 +14,19 @@ html {
 .wow{
     border:2px solid  #553d67;
 }
+div{
+  /* border: solid black 2px; */
+}
 
 .playstore, .download, .jee, .box{
   background-color: #f64c72;
 }
-
+.fixed{
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  z-index: 4;
+}
   
   .nav {
     height: 60px;

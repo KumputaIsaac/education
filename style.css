@@ -2,11 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'PT Serif', serif;
 }
 html {
     font-size: 62.5%;
   }
-div{
+.wow,.book,.boards,.playstore,.box,.jee,.download{
     border:2px solid black;
 }
 
@@ -107,6 +108,11 @@ div{
     }
   }
 
+  img{
+    width: 100%;
+    height: 100%;
+  }
+
 
 
 input:focus{
@@ -123,7 +129,8 @@ input:focus{
 }
 .header h1{
     font-size: 5rem;
-    margin: 4rem 0;
+    margin: 7rem 0;
+    padding-left: 0 !important;
 }
 .header p{
     font-size: 2rem;
@@ -152,7 +159,7 @@ input:focus{
 .wow{
     display: flex;
     height: 4rem;
-    margin: 4rem 0;
+    margin: 7rem 0;
 }
 .wow i{
     padding: 7px 5px;
@@ -175,8 +182,8 @@ input:focus{
     justify-content: center;
 }
 .display{
-    width: 40rem;
-    height: 30rem;
+    width: 80%;
+    height: auto;
     margin: 0 auto;
 }
 .image{
@@ -207,9 +214,10 @@ input:focus{
 }
 .box{
   width: 25rem;
-  height: 24rem;
+  height: auto;
   margin-top: 2rem;
   text-align: center;
+  box-shadow: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 )
 }
 .box h2{
   font-size: 3rem;
@@ -224,10 +232,9 @@ input:focus{
     margin: 20px auto;
     border-radius: 50px;
     padding: 5px;
+    margin-top: 5rem;
 }
-.two{
-  margin-top: 53px;
-}
+
 
 
 
@@ -240,6 +247,7 @@ input:focus{
   justify-content: center;
   width: 35rem;
   margin-top: 2rem;
+  text-align: center;
 }
 .pics{
   height: 5rem;
@@ -258,6 +266,10 @@ input:focus{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+.material i{
+  font-size: 3.5rem;
+  padding: 3px 2px;
 }
 .jee{
   padding: 3rem 0;
@@ -299,14 +311,18 @@ input:focus{
 .text{
   margin-top: 2rem;
 }
+.text p{
+  padding-top: 2rem;
+  text-align: center;
+}
 
 .download{
   width: fit-content;
   padding: 1rem 5rem;
   font-size: 2rem;
-  margin: 0 auto;
-  margin-top: 5rem;
+  margin: 5rem auto;
   text-align: center;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2)
 }
 span{
   padding-left: 2rem;
@@ -342,12 +358,6 @@ h1{
       width: 90%;
   }
 }
-@media screen and (max-width: 900px) {
-  .display{
-      width: 30rem;
-  }
-  
-}
 
 @media screen and (max-width: 740px) {
   .nav > .nav-links > a {
@@ -366,6 +376,9 @@ h1{
 .image{
   margin-top: 4rem;
 }
+.display{
+  width: 70%;
+}
 
 }
 @media screen and (max-width: 400px) {
@@ -378,8 +391,14 @@ h1{
 
 }
 @media screen and (max-width: 500px) {
+  html{
+    font-size: 50%;
+  }
 .header{
   padding: 0;
+}
+.boards{
+  font-size: 2rem !important;
 }
 .press {
   width: 100%;
@@ -410,3 +429,8 @@ h1{
     }
     
     }
+
+.playstore, .download, .book{
+  cursor: pointer;
+}
+

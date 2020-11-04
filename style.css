@@ -3,12 +3,16 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'PT Serif', serif;
+    color: #332c31;
+   
 }
+/* #2f2fa2 #99738e #f64c72 #553d67 #242582 */
 html {
     font-size: 62.5%;
+     color: #242582 #553d67 #2f2fa2 #99738e #f64c72;
   }
 .wow,.book,.boards,.playstore,.box,.jee,.download{
-    border:2px solid black;
+    border:2px solid  #553d67;
 }
 
 
@@ -16,7 +20,7 @@ html {
   .nav {
     height: 60px;
     width: 100%;
-    background-color: #4d4d4d;
+    background-color: #242582;
     position: relative;
   }
   
@@ -42,7 +46,7 @@ html {
   }
 
   .box1{
-      border: 1px solid black;
+      border: 1px solid  #553d67;
       /* height: 30px; */
   }
   
@@ -76,7 +80,7 @@ html {
       padding: 13px;
     }
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color:#242582;
     }
     .nav > .nav-btn > label > span {
       display: block;
@@ -88,12 +92,13 @@ html {
       position: absolute;
       display: block;
       width: 100%;
-      background-color: #333;
+      background-color: #242582;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
       top: 50px;
       left: 0px;
+      z-index: 1;
     }
     .nav > .nav-links > a {
       display: block;
@@ -105,6 +110,7 @@ html {
     .nav > #nav-check:checked ~ .nav-links {
       height: calc(100vh - 50px);
       overflow-y: auto;
+      z-index: 1;
     }
   }
 
@@ -248,6 +254,7 @@ input:focus{
   width: 35rem;
   margin-top: 2rem;
   text-align: center;
+  background-color:  #2f2fa2;
 }
 .pics{
   height: 5rem;
@@ -366,6 +373,7 @@ h1{
   .jee{
     font-size: 2rem;
     width: 25rem;
+    padding: 1rem;
   }
 }
 
@@ -378,6 +386,17 @@ h1{
 }
 .display{
   width: 70%;
+}
+.box{
+  width: 18rem;
+  font-size: 2rem !important;
+}
+.boards,.jee {
+  width: 18rem;
+}
+.subjects .boards, .solution .boards {
+  font-size: 2rem;
+  padding: 1rem 0;
 }
 
 }
@@ -393,6 +412,12 @@ h1{
 @media screen and (max-width: 500px) {
   html{
     font-size: 50%;
+  }
+  .box1{
+    border: none;
+  }
+  .check{
+    margin-top: 10px !important;
   }
 .header{
   padding: 0;
